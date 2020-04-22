@@ -1,0 +1,19 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "Community Meal Support App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbarnetttx/FinalProject.git"
+  },
+  "author": "Meredith Barnett" "Tanisha Howell" "Yensey Murillo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mbarnetttx/FinalProject/issues"
+  },
+  "homepage": "https://github.com/mbarnetttx/FinalProject#readme"
+}

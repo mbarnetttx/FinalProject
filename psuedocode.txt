@@ -1,0 +1,50 @@
+IDEA
+
+an app that allows users to contribute meals to those in need in their community
+
+users post what they can contribute in meal #s, and add to a specific day 
+
+posters tell us whether they will need pick up for their contributions or whether they can drop off
+
+we take meals for the day to the local food bank
+
+
+
+NOTES
+
+what kind of foods can be contributed? think of foods that can spoil
+
+
+CRUD 
+
+GET webpage data to display
+
+POST allows users to input what meals they can contribute to what day
+
+
+
+PUT shows how many meals will be available each day (week by week calendar?)
+
+Allow users to EDIT and DELETE their entries
+
+
+
+
+
+NEED  
+
+-user authentication
+
+-2 new libraries
+
+-mysql/mongo 
+
+-node/express
+
+-react
+
+-heroku deployment
+
+-secured API use
+
+
