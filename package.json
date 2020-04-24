@@ -4,16 +4,20 @@
   "description": "Community Meal Support App",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node scripts/seedDB.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbarnetttx/FinalProject.git"
   },
-  "author": "Meredith Barnett" "Tanisha Howell" "Yensey Murillo",
+  "author": "Meredith Barnett, Tanisha Howell, Yensey Murillo",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/mbarnetttx/FinalProject/issues"
   },
-  "homepage": "https://github.com/mbarnetttx/FinalProject#readme"
+  "homepage": "https://github.com/mbarnetttx/FinalProject#readme",
+  "dependencies": {
+    "mongoose": "^5.9.10"
+  }
 }
