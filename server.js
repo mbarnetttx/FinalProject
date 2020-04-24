@@ -1,31 +1,31 @@
-// dependencies
-var express = require ("express");
+const express = require("express");
 
-var bodyParser = require ("body-parser");
+const mongoose = require("mongoose");
+// const routes = require("./routes");
+const app = express();
+const PORT = process.env.PORT || 3001;
+const models = require("./models/index")
 
-// set up express app
-var app = express();
+// Define middleware here
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-var PORT = process.env.PORT || 3000;
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+}
 
-// connect db model
-// var DB = require ("");
+// Add routes, both API and view
+// app.use(routes);
+app.use(models)
 
+// Connect to the Mongo DB
+mongoose.connect(
+	process.env.MONGODB_URI || "mongodb://localhost:27017",
+	{ useNewUrlParser: true }
+);
 
-// sets up app to handle data parsing
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
-app.use(express.static("public"));
-
-
-// routes
-require("")
-
-// sync sequelize models and start express app
-// DB.sequelize.sync({force: true}).then(function(){
-    app.listen(PORT, function(){
-        consolelog("App listening on PORT"+ PORT)
-    })
-// });
-
-
+// Start the API server
+app.listen(PORT, function () {
+	console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});
