@@ -1,6 +1,6 @@
 // Dependencies
 const router = require("express").Router();
-const donations = require("./donationsRouter");
+const donations = require("./index");
 
 // Item routes
 router.use("/index", donations);
