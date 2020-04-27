@@ -1,18 +1,18 @@
 import React from "react";
 
-function Jumbotron({ children }) {
-	return (
-		<div
-			style={{
-				height: 300,
-				clear: "both",
-				paddingTop: 120,
-				textAlign: "center",
-			}}
-			className="jumbotron">
-			{children}
+function Jumbotron() {
+    return (
+		<section class="hero is-primary">
+		<div class="hero-body">
+		  <p class="title">
+			Neighbor 2 Neighbor
+		  </p>
+		  <p class="subtitle">
+			Become a <strong>Donor</strong> or <strong>Donee</strong>
+		  </p>
 		</div>
-	);
+	  </section>
+    );
 }
 
 export default Jumbotron;
