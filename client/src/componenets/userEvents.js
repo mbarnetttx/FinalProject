@@ -8,17 +8,10 @@ function userEvents() {
           Repositories
         </p>
         <div class="panel-block">
-          <p class="control has-icons-left">
-            <input class="input" type="text" placeholder="Search"/>
-            <span class="icon is-left">
-              <i class="fas fa-search" aria-hidden="true"></i>
-            </span>
-          </p>
         </div>
         <p class="panel-tabs">
-          <div class="is-active">All</div>
-          <div>Public</div>
-          <div>Private</div>
+          <a href="/all" class="is-active">All</a>
+          <a href="/ended">Ended</a>
         </p>
         <div class="panel-block is-active">
           <span class="panel-icon">
@@ -56,15 +49,8 @@ function userEvents() {
           </span>
           mojs
         </div>
-        <label class="panel-block">
-          <input type="checkbox"/>
-          remember me
-        </label>
-        <div class="panel-block">
-          <button class="button is-link is-outlined is-fullwidth">
-            Reset all filters
-          </button>
-        </div>
+      
+     
       </nav>
 
 

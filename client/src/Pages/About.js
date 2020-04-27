@@ -1,13 +1,102 @@
 import React, { Component } from "react";
+import Jumbotron from '../componenets/Jumbotron';
 
 class LoggedIn extends Component {
     render() {
         return (
-            <div>
+        <div>
+            <Jumbotron />
+            <br></br><br></br>
+            
             <div className="container">
-                <h2>About N2N</h2>
+            <div class="columns">
+                <div class="card column"> {/*meredith*/}
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"/>
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">John Smith</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                            </div>
+                            </div>
+
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card column"> {/*Tanisha*/}
+                        <div class="card-image col-md-4">
+                            <figure class="image is-4by3">
+                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"/>
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">John Smith</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                            </div>
+                            </div>
+
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card column"> {/*Yensey*/}
+                        <div class="card-image col-md-4">
+                            <figure class="image is-4by3">
+                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"/>
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">John Smith</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                            </div>
+                            </div>
+
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+            
             </div>
+
+            
+       
         )
     }
 }
