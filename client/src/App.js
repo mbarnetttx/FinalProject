@@ -24,8 +24,8 @@ function App() {
        </Wrapper>
      </div>
  
-    </Router> 
      <Footer />
+    </Router> 
 
   </div>
   );

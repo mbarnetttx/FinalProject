@@ -3,11 +3,26 @@
 }
 
 footer{
-  position: fixed;
-  bottom: 0;
-  left:0;
-  width:100%;
+  text-align: center;
 }
 
+.content{
+  text-align: left;
+}
 
+.hero2{
+  background-image: url("https://images.unsplash.com/photo-1570078420152-d016091ec97a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
 
+.header{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.card{
+  margin-left: 10px;
+}
+
+.footerlinks{
+  text-align: center;
+}
