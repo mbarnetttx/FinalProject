@@ -1,38 +1,97 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1923&q=80");
+  font-family: 'Nixie One', cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer{
+  text-align: center;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer{
+padding:20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footerLinks{
+  margin-left: 100px;
+}
+
+.content, .media-content{
+  text-align: center;
+}
+
+figure{
+ margin-right: 0;
+}
+
+.title2{
+font-size: 100px;
+text-shadow: 5px 5px rgb(230, 226, 216);
+}
+.hero{
+ background-color: rgb(177, 235, 122);
+}
+
+.hero2{
+  background-image: url("https://images.unsplash.com/photo-1570078420152-d016091ec97a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
+
+.heroLogged{
+background-image: url("https://images.unsplash.com/photo-1533499513792-8c4483a36c9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80");
+height: 200px;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.header{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.card{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.box{
+  margin-bottom: 10px;
+}
+
+.is-rounded{
+  padding:10px;
+}
+
+span{
+  text-align: center;
+}
+
+.avatar{
+  border-radius: 200px;
+  height: 210px;
+  width: 210px
+}
+
+.teamAvatar{
+  border-radius: 200px;
+  height: 150px;
+  width: 150px;
+  margin-top: 20px
+}
+
+.userName{
+  margin-left: 100px;
+}
+
+.welcome{
+  font-size: 300%;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: bold;
+  text-shadow: 3px 2px rgb(8, 41, 1);
 }

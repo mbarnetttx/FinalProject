@@ -1,16 +1,18 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <footer class="footer">
-            <div class="content has-text-centered">
-                <p>
-                    <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-                </p>
-            </div>
-        </footer>
+        <footer className="footer">
+        <div className="content has-text-centered">
+          {/* <div className="columns footerLinks">
+              <Link className="navbar-item" to="/home">Home |</Link>
+              <Link className="navbar-item" to="/about">About Us |</Link>
+              <Link className="navbar-item" to="/donor">Donate </Link>
+          </div> */}
+        <p> © 2020 Neighbor 2 Neighbor. All rights reserved.</p>
+        </div>
+      </footer>
     );
 }
 
