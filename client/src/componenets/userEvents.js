@@ -3,37 +3,37 @@ import React from "react";
 function userEvents() {
     return (
         
-      <nav class="panel box">
-        <p class="panel-heading">
+      <nav className="panel box">
+        <p className="panel-heading">
           Your Events
         </p>
-        <div class="panel-block">
+        <div className="panel-block">
         </div>
-        <p class="panel-tabs">
-          <a href="/all" class="is-active">All</a>
+        <p className="panel-tabs">
+          <a href="/all" className="is-active">All</a>
           <a href="/ended">Ended</a>
         </p>
-        <div class="panel-block is-active">
-          <span class="panel-icon">
-            <i class="fas fa-book" aria-hidden="true"></i>
+        <div className="panel-block is-active">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
           </span>
           bulma
         </div>
-        <div class="panel-block">
-          <span class="panel-icon">
-            <i class="fas fa-book" aria-hidden="true"></i>
+        <div className="panel-block">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
           </span>
           marksheet
         </div>
-        <div class="panel-block">
-          <span class="panel-icon">
-            <i class="fas fa-book" aria-hidden="true"></i>
+        <div className="panel-block">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
           </span>
           minireset.css
         </div>
-        <div class="panel-block">
-          <span class="panel-icon">
-            <i class="fas fa-book" aria-hidden="true"></i>
+        <div className="panel-block">
+          <span className="panel-icon">
+            <i className="fas fa-book" aria-hidden="true"></i>
           </span>
           jgthms.github.io
         </div>

@@ -3,77 +3,73 @@ import React from "react";
 function Form(){
     return (
     
-        <div class="box">  
+        <div className="box">  
 
-                <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label">Event Name</label>
+                <div className="field is-horizontal">
+                <div className="field-label is-normal">
+                    <label className="label">Event Name</label>
                 </div>
-                <div class="field-body">
-                    <div class="field">
-                    <div class="control">
-                        <input class="input" type="text" placeholder="e.g. Partnership opportunity"/>
+                <div className="field-body">
+                    <div className="field">
+                    <div className="control">
+                        <input class="input" type="text" placeholder="e.g. Cookies for Kids"/>
                     </div>
                     </div>
                 </div>
                 </div>
 
-                <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label">Event Description</label>
+                <div className="field is-horizontal">
+                <div className="field-label is-normal">
+                    <label className="label">Event Description</label>
                 </div>
-                <div class="field-body">
-                    <div class="field">
-                    <div class="control">
-                        <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                <div className="field-body">
+                    <div className="field">
+                    <div className="control">
+                        <textarea className="textarea" placeholder="Write as much information to help those in need better."></textarea>
                     </div>
                     </div>
                 </div>
                 </div>
 
 
-                <div class="field is-horizontal">
-                <div class="field-label">
-                     <label class="label">Date of Event</label>
+                <div className="field is-horizontal">
+                <div className="field-label">
+                     <label className="label">Date of Event</label>
                 </div>
                 
-                <div class="field-body">
-                    <div class="field">
-                    <div class="control">
-                        <button class="button is-primary">
-                        Add Donation Event
-                        </button>
+                <div className="field-body">
+                    <div className="field">
+                    <div className="control">
+                             <input className="input" type="text" placeholder="MM/DD/YYYY"/>  
                     </div>
                     </div>
                 </div>
                 </div>
 
-                <div class="field is-horizontal">
-                <div class="field-label">
-                        <label class="label"># of Spots Avaiable</label>
+                <div className="field is-horizontal">
+                <div className="field-label">
+                        <label className="label"># of Spots Avaiable</label>
                 </div>
                 
-                <div class="field-body">
-                    <div class="field">
-                    <div class="control">
-                        <button class="button is-primary">
-                        Add Donation Event
-                        </button>
+                <div className="field-body">
+                    <div className="field">
+                    <div className="control">
+                         <input className="input" type="text" placeholder="Amount of Spots (e.g. 15)"/>
                     </div>
                     </div>
                 </div>
                 </div>
 
-                <div class="field is-horizontal">
-                <div class="field-label">
+                <div className="field is-horizontal">
+                <div className="field-label">
                     {/* <!-- Left empty for spacing --> */}
                 </div>
                 
-                <div class="field-body">
-                    <div class="field">
-                    <div class="control">
-                    <div class="control">
-                        <div class="select">
+                <div className="field-body">
+                    <div className="field">
+                    <div className="control">
+                    <div className="control">
+                        <div className="select">
                             <select>
                             <option>Pick-Up</option>
                             <option>Drop-Off</option>
@@ -85,15 +81,15 @@ function Form(){
                 </div>
                 </div>
 
-                <div class="field is-horizontal">
-                <div class="field-label">
+                <div className="field is-horizontal">
+                <div className="field-label">
                     {/* <!-- Left empty for spacing --> */}
                 </div>
                 
-                <div class="field-body">
-                    <div class="field">
-                    <div class="control">
-                        <button class="button is-primary">
+                <div className="field-body">
+                    <div className="field">
+                    <div className="control">
+                        <button className="button is-success">
                         Add Donation Event
                         </button>
                     </div>
