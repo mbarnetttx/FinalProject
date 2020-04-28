@@ -1,13 +1,40 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1923&q=80");
+  font-family: 'Nixie One', cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
 .App {
   text-align: center;
 }
 
 footer{
   text-align: center;
+  font-size: 15px;
 }
 
-.content{
-  text-align: left;
+.footer{
+padding:20px;
+}
+
+.footerLinks{
+  margin-left: 100px;
+}
+
+.content, .media-content{
+  text-align: center;
+}
+
+figure{
+ margin-right: 0;
+}
+
+.title2{
+font-size: 100px;
+text-shadow: 5px 5px rgb(230, 226, 216);
+}
+.hero{
+ background-color: rgb(177, 235, 122);
 }
 
 .hero2{
@@ -21,8 +48,17 @@ footer{
 
 .card{
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-.footerlinks{
+.box{
+  margin-bottom: 10px;
+}
+
+.is-rounded{
+  padding:10px;
+}
+
+span{
   text-align: center;
 }

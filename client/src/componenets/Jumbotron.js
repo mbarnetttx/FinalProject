@@ -2,7 +2,7 @@ import React from "react";
 
 function Jumbotron() {
     return (
-		<section class="hero is-primary">
+		<section class="hero">
 		<div class="hero-body">
 		  <p class="title">
 			Neighbor 2 Neighbor

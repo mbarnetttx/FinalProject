@@ -3,9 +3,9 @@ import React from "react";
 function userEvents() {
     return (
         
-        <nav class="panel">
+      <nav class="panel box">
         <p class="panel-heading">
-          Repositories
+          Your Events
         </p>
         <div class="panel-block">
         </div>
@@ -37,19 +37,6 @@ function userEvents() {
           </span>
           jgthms.github.io
         </div>
-        <div class="panel-block">
-          <span class="panel-icon">
-            <i class="fas fa-code-branch" aria-hidden="true"></i>
-          </span>
-          daniellowtw/infboard
-        </div>
-        <div class="panel-block">
-          <span class="panel-icon">
-            <i class="fas fa-code-branch" aria-hidden="true"></i>
-          </span>
-          mojs
-        </div>
-      
      
       </nav>
 
