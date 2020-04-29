@@ -37,7 +37,7 @@ class LoggedIn extends Component {
                 <div className="column">
                     <UserEvents />
                 </div>
-                <div className="column is-one-quarter">
+                <div className="column is-half">
                     
                 </div>
             </div>

@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import Jumbotron from '../componenets/Jumbotron';
+import EventCalendar from "../componenets/EventCalendar";
 
 class Calendar extends Component {
     render() {
         return (
             <div>
             <Jumbotron />
+            <br/>
             <div className="container">
-                <h2>Here is where we will add the calendar</h2>
-                
+                <div className="box">
+                <EventCalendar />
+                </div>
             </div>
             </div>
 
