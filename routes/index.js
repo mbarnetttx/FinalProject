@@ -1,7 +1,9 @@
 //Dependencies
+const express = require("express");
 const path = require("path");
-const router = require("express").Router();
+const router = express.Router();
 const apiRoutes = require("./api");
+
 
 // API Routes
 router.use("/api", apiRoutes);

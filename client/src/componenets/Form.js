@@ -12,7 +12,7 @@ function Form(){
                 <div className="field-body">
                     <div className="field">
                     <div className="control">
-                        <input class="input" type="text" placeholder="e.g. Cookies for Kids"/>
+                        <input class="input" type="text" placeholder="e.g. Sack Lunches"/>
                     </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ function Form(){
                 <div className="field-body">
                     <div className="field">
                     <div className="control">
-                        <textarea className="textarea" placeholder="Write as much information to help those in need better."></textarea>
+                        <textarea className="textarea" id="name" placeholder="Write as much information to help those in need better."></textarea>
                     </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ function Form(){
                 <div className="field-body">
                     <div className="field">
                     <div className="control">
-                             <input className="input" type="text" placeholder="MM/DD/YYYY"/>  
+                             <input className="input" type="text" id="date" placeholder="MM/DD/YYYY"/>  
                     </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ function Form(){
                 <div className="field-body">
                     <div className="field">
                     <div className="control">
-                         <input className="input" type="text" placeholder="Amount of Spots (e.g. 15)"/>
+                         <input className="input" type="text" id="number" placeholder="Amount of items (e.g. 15)"/>
                     </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ function Form(){
                     <div className="field">
                     <div className="control">
                     <div className="control">
-                        <div className="select">
+                        <div className="select" id="pickDrop">
                             <select>
                             <option>Pick-Up</option>
                             <option>Drop-Off</option>
@@ -89,7 +89,7 @@ function Form(){
                 <div className="field-body">
                     <div className="field">
                     <div className="control">
-                        <button className="button is-success">
+                        <button className="button is-success" id="addButton">
                         Add Donation Event
                         </button>
                     </div>
