@@ -17,7 +17,7 @@ function App() {
      <div className="App">
      <Nav />
        <Wrapper>
-             <Route exact path="/home" component={Calendar} />
+             <Route exact path="/" component={Calendar} />
              <Route exact path="/about" component={About} />
              <Route exact path="/donor" component={LoggedIn} />
              

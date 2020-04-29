@@ -19,7 +19,7 @@ function Nav() {
 				<div id="navbarBasicExample" className="navbar-menu">
 					<div className="navbar-start">
 						<div className="navbar-item">
-							<Link to="/home" className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
+							<Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
 							> Calendar</Link>
     					</div>
 						<div className="navbar-item">
