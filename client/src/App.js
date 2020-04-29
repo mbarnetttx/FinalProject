@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
-import Nav from './componenets/Nav';
-import Footer from './componenets/Footer';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Calendar from './Pages/calendar';
+import Calendar from './Pages/Calendar';
 import LoggedIn from './Pages/LoggedIn';
 import About from './Pages/About';
-import Wrapper from './componenets/Wrapper';
+import Login from './Pages/Login';
+import Logout from './Pages/Logout';
+import Register from './Pages/Register';
+import Wrapper from './components/Wrapper';
 
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
              <Route exact path="/" component={Calendar} />
              <Route exact path="/about" component={About} />
              <Route exact path="/donor" component={LoggedIn} />
+             <Route exact path="/Login" component={Login} />
+             <Route exact path="/Logout" component={Logout} />
+             <Route exact path="/Register" component={Registered} />
              
        </Wrapper>
      </div>

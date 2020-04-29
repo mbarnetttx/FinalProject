@@ -1,23 +1,30 @@
-<h1>Login</h1>
-<% if (messages.error) { %>
-    <%= messages.error %>
-<% } %>
-<form action="/login" method="POST">
+import react from 'react'
 
-<div>
+
+function login() {
+    return (
+<form action="/login" method="POST">
+<h1>Login</h1>
+
     <label for="email">Email</label>
     <input type="email" id="email" name="email"
-    required>
-</div>
+    required/>
 
-<div>
+
+
     <label for="password">Password</label>
     <input type="password" id="password" name="password"
-    required>
-</div>
+    required/>
+
 
 <button type="submit">Login</button>
-
+<a href="/register">Register</a>
 </form>
 
-<a href="/register">Register</a>
+
+
+    )
+
+}
+
+export default login
