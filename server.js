@@ -1,17 +1,19 @@
 if (process.env.NODE_ENV !== 'production') {
 	require('dotenv').config()
 }
-const express  = require('express')
-const app      = express()
-const bcrypt   = require('bcrypt') // encrypts passwords for tighter security
-const passport = require('passport') 
-const flash    = require('express-flash')
-const session  = require('express-session')
-const methodOverride = require('method-override')
+const express  = require('express');
+const app      = express();
+const bcrypt   = require('bcrypt'); // encrypts passwords for tighter security
+const passport = require('passport');
+const flash    = require('express-flash');
+const session  = require('express-session');
+const methodOverride = require('method-override');
 const mongoose = require("mongoose");
-// const routes = require("./routes");
-const PORT     = process.env.PORT || 3000;
-const models   = require("./models/index")
+const routes = require("./routes");
+const PORT     = process.env.PORT || 3001;
+
+
+
 
 // configure Passport
 const initializePassport = require('./passport-config')
@@ -36,8 +38,13 @@ app.use(session({
 }))
 
 // Add routes, both API and view
-// app.use(routes);
-// app.use(models)
+// const donationsRouter = ("./controllers/donationsController")
+// app.use(donationsRouter);
+
+app.use(routes);
+
+
+
 
 // Connect to the Mongo DB
 mongoose.connect(
@@ -107,6 +114,8 @@ function checkNotAuthenticated(req, res, next) {
 	}
 	next()
 }
+
+
 
 // Start the API server
 app.listen(PORT, function () {

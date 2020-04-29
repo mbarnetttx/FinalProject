@@ -33,7 +33,7 @@ function Nav() {
 								<div className="buttons">
 									<div className="button is-success">
 									<Link to="/donor" className={window.location.pathname === "/donor" ? "nav-link active" : "nav-link"}
-									>Donor </Link>
+									>Donate </Link>
          							</div>
 								</div>
 							</div>

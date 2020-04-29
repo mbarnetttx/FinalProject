@@ -1,16 +1,19 @@
 // Dependencies
-const router = require("express").Router();
-const donationsController = require("../../controllers/donationsController.js");
+// const router = require("express").Router();
+const express = require("express");
+const router = express.Router();
+const donationsRoutes = require("./donationsRouter");
 
-// Matches with "/api/items"
-router.route("/").get(donationsController.findAll).post(donationsController.create);
 
-// Matches with "/api/items/:id"
-router
-	.route("/:id")
-	.get(donationsController.findById)
-	.put(donationsController.update)
-	.delete(donationsController.remove);
 
-// Exporting
+// Item routes
+router.use("/donations", donationsRoutes);
+
+//Exporting
 module.exports = router;
+
+
+
+
+
+
