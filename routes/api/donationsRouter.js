@@ -1,9 +1,20 @@
-// Dependencies
-const router = require("express").Router();
-const donations = require("./index");
+//  Dependencies
+// const router = require("express").Router();
+const express = require("express");
+const router = express.Router();
+const donationsController = require("../../controllers/donationsController")
 
-// Item routes
-router.use("/index", donations);
 
-//Exporting
+
+
+router.route("/").get(donationsController.findAll).post(donationsController.create);
+
+
+router
+	.route("/:id")
+	.get(donationsController.findById)
+	.put(donationsController.update)
+	.delete(donationsController.remove);
+
+// Exporting
 module.exports = router;
