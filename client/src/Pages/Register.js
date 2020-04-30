@@ -1,31 +1,43 @@
-import react from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-function register() {
+function Register() {
     return (
         <form action="/register" method="POST">
-         <h1>Register</h1>   
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name"
-                    required/>
+            <h1 className="title">Register</h1>
+                <div>
+                    <label className="name">Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name"
+                            required />
+                </div>
 
+                <div>
+                    <label className="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            required />
+                </div>
 
-                
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email"
-                        required/>
+                <div>
+                    <label className="password">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            required />
+                </div>
 
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password"
-                            required/>
-
-
-                        <button type="submit">Register</button>
+                <div>
+                    <button className="button is-success">Register</button>
                         <a href="/login">Login</a>
-        </form>
-
-                    
-
+                </div>
+            </form>
     )
 }
 
-export default register
+export default register;

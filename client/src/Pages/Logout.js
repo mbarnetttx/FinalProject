@@ -1,17 +1,12 @@
-import react from 'react'
+import react from 'react';
 
-
-function index(props) { // Props is optional
+function index(props) {
     return (
-        <h1>Hi {props.name} </h1> // This line is optional
-
-            <form action="/logout?_method=DELETE" method="POST">
-
+        <form action="/logout?_method=DELETE" method="POST">        
+            <h1>Hi {props.name} </h1>
                 <button type="submit">Log Out</button>
-    
-            </form>
-
+        </form>
     )
 }
 
-export default index
+export default index;

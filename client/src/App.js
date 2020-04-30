@@ -21,7 +21,7 @@ function App() {
      <Nav />
        <Wrapper>
              <Route exact path="/" component={Calendar} />
-             <Route exact path="/about" component={About} />
+             <Route exact path="/About" component={About} />
              <Route exact path="/donor" component={LoggedIn} />
              <Route exact path="/Login" component={Login} />
              <Route exact path="/Logout" component={Logout} />

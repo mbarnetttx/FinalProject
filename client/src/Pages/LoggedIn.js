@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import UserEvents from "../componenets/userEvents";
-import UserInfo from '../componenets/userInfo';
-import Jumbo from '../componenets/loggedInImage';
-import Form from '../componenets/Form';
+import UserEvents from "../components/userEvents";
+import UserInfo from '../components/userInfo';
+import Jumbo from '../components/loggedInImage';
+import Form from '../components/Form';
 
 class LoggedIn extends Component {
     render() {
