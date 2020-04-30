@@ -1,8 +1,8 @@
 import React from "react";
 
-function Form(){
+function Form() {
     return (
-    
+        
         <div className="box">  
 
                 <div className="field is-horizontal">
