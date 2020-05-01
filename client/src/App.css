@@ -55,10 +55,21 @@ margin-top: 20px;
 
 .heroImg{
  height: 500px;
- margin-bottom: 30px;
  padding: 50px;
  background-image: url("https://images.unsplash.com/photo-1586323880397-58f0d4764df0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+ margin-left:40px;
+ margin-right:40px;
+ margin-bottom: 20px;
 }
+
+.heroImg2{
+  height: 335px;
+  padding: 50px;
+  background-image: url("https://mauteam.org/wp-content/uploads/2019/08/Mautic-support-how-to-get-help.jpg");
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom: 20px;
+ }
 
 .header{
   font-size: 30px;
@@ -118,3 +129,23 @@ button{
   margin:10px
 }
 
+.loginForm{
+  margin-top: 30px;
+ margin-left:40px;
+ margin-right:40px;
+ height: 350px;
+ padding: 20px
+}
+
+
+.loginForm2{
+  margin-left:150px;
+  margin-right:150px;
+  height: 450px;
+  padding: 20px
+ }
+
+.field{
+  margin-right: 30px;
+  margin-left: 30px;
+}

@@ -1,43 +1,41 @@
-import React from 'react';
-import Jumbotron from '../components/Jumbotron';
+import React from 'react'
 
-function Login() {
+function login() {
     return (
-        <div>
-            <Jumbotron />
-            <br/>
-        <div className="container">
-            <div className="message is-light loginForm">
-            <form action="/login" method="POST" className="formLog">
-                <div className="message-header is-success">
-                <h1>Login</h1>
-                </div>
-            
-            <section  className="formLog">
-            <label for="email">Email</label>
-            <input 
-                type="email" 
-                id="email" 
-                name="email"
-                required/>
+<div class="container">
+        <article class="message is-large is-light loginForm">
+                <form action="/login" method="POST" >
+                    <div class="field">
+                    <div class="message-header">
+                        <h1 className="title">Login</h1>
+                    </div>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input className="input"
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            required/>
+                    </div>
 
-            <label for="password">Password</label>
-            <input 
-                type="password" 
-                id="password" 
-                name="password"
-                required/>
-            </section>
-            <section>
-            <button type="submit" className="button is-success">Login</button>
-            <a href="/register" className="button is-success" >Register</a>
-            </section>
-            </form>
-            </div>
-            <section className="hero heroImg"/>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input className="input"
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            required/>
+                    </div>
+                    <div class="field is-grouped">
+                        <button type="submit" class="button is-success">Login</button>
+                        <button class="button is-success is-light"><a href="/register">Register</a></button>
+                    </div>
+                </form>
+        </article>
+                <section className="hero heroImg"/>
         </div>
-        </div>
-    )
+    ) 
 }
 
-export default Login;
+export default login

@@ -68,7 +68,7 @@ class LoggedIn extends Component {
                 <div className="card">{/*Tanisha*/}
                         <div className="card-image">
                             <figure>
-                            <img className="teamAvatar" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholderimage"/>
+                            <img className="teamAvatar" src="https://avatars1.githubusercontent.com/u/57296464?s=400&u=0ed00ef4ccc0685cc36411eef2d2aeb298da07c9&v=4" alt="Placeholderimage"/>
                             </figure>
                         </div>
                         <div className="card-content">
