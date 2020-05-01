@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function userInfo() {
     return (
@@ -6,7 +7,7 @@ function userInfo() {
 
         <div className="card">
             <figure className=" is-1by1">
-            <img  className="is-rounded avatar" src="https://bulma.io/images/placeholders/128x128.png" alt="avatar"/>
+            <img  className="is-rounded avatar" src="https://gbci-edge.s3.amazonaws.com/edge-online/s3fs-public/avatar-green.png" alt="avatar"/>
             </figure>
             <header className="card-header">
                 <p className="card-header-title userName">
@@ -23,6 +24,16 @@ function userInfo() {
             <footer className="card-footer">
                 <a href="/edit" className="card-footer-item">Edit</a>
             </footer>
+
+            <div className="navbar-item">
+				<div className="buttons">
+					<div className="button is-success">
+					<Link to="/logout" className={window.location.pathname === "/logout" ? "nav-link active" : "nav-link"}
+					>Logout </Link>
+         			</div>
+					</div>
+			</div>
+            
         </div>
    
     );

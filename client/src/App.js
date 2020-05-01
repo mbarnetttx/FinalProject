@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Calendar from './Pages/Calendar';
+import Calendar from './Pages/Calendar1';
 import LoggedIn from './Pages/LoggedIn';
 import About from './Pages/About';
 import Login from './Pages/Login';

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Jumbotron from '../components/Jumbotron';
 
+
 class LoggedIn extends Component {
     render() {
         return (
@@ -88,7 +89,7 @@ class LoggedIn extends Component {
                 <div className="card">{/*Yensey*/}
                         <div className="card-image">
                             <figure >
-                            <img className="teamAvatar" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholderimage"/>
+                            <img className="teamAvatar" src="https://media-exp1.licdn.com/dms/image/C4E03AQFeF13WvXXzTw/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=CFehRitT6HqPSxPDtvhQ8r7B6SN-_v9PhXE3QstRQrg" alt="Placeholderimage"/>
                             </figure>
                         </div>
                         <div className="card-content">

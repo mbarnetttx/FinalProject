@@ -1,9 +1,14 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import Jumbotron from '../components/Jumbotron';
 
 function Register() {
     return (
-        <form action="/Register" method="POST">
+        <div>
+        <Jumbotron/>
+        <br/>
+        <div className="container box">
+        <form action="/register" method="POST">
             <h1 className="title">Register</h1>
                 <div>
                     <label className="name">Name</label>
@@ -34,9 +39,12 @@ function Register() {
 
                 <div>
                     <button className="button is-success">Register</button>
-                        <a href="/Login">Login</a>
+                    <button className="button is-success">  <a href="/login">Login</a> </button>
                 </div>
             </form>
+
+            </div>
+        </div>
     )
 }
 

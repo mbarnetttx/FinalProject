@@ -37,17 +37,16 @@ function Nav() {
          							</div>
 								</div>
 							</div>
-						</div>
-
-						<div className="navbar-end">
+				
 							<div className="navbar-item">
 								<div className="buttons">
 									<div className="button is-success">
-									<Link to="/logout" className={window.location.pathname === "/logout" ? "nav-link active" : "nav-link"}
-									>Logout </Link>
+									<Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
+									>Log-In </Link>
          							</div>
 								</div>
 							</div>
+					
 						</div>
 
 
