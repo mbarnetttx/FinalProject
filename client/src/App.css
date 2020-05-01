@@ -53,6 +53,13 @@ margin-bottom: 20px;
 margin-top: 20px;
 }
 
+.heroImg{
+ height: 500px;
+ margin-bottom: 30px;
+ padding: 50px;
+ background-image: url("https://images.unsplash.com/photo-1586323880397-58f0d4764df0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+}
+
 .header{
   font-size: 30px;
   margin-bottom: 30px;
@@ -98,3 +105,16 @@ span{
   font-weight: bold;
   text-shadow: 3px 2px rgb(8, 41, 1);
 }
+
+button{
+  margin-right: 10px;
+}
+
+.loginForm{
+  height: 200px;
+}
+
+.formLog{
+  margin:10px
+}
+
