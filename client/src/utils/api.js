@@ -4,7 +4,6 @@ export default {
 	// Gets all items
 	getDonations: function () {
 		return axios.get("/index");
-		
 	},
 	// Gets the item with the given id
 	getDonations: function (id) {
