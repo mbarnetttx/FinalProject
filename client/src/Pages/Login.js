@@ -1,8 +1,8 @@
 import React from 'react'
 
-function login() {
+function Login() {
     return (
-        <form action="/login" method="POST">
+        <form action="/Login" method="POST">
             <h1>Login</h1>
 
         <label for="email">Email</label>
@@ -20,9 +20,9 @@ function login() {
             required/>
 
         <button type="submit">Login</button>
-        <a href="/register">Register</a>
+        <a href="/Register">Register</a>
         </form>
     )
 }
 
-export default login
+export default Login;

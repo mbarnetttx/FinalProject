@@ -59,24 +59,24 @@ app.use(methodOverride('_method'))
 
 // routes for login & register pages
 app.get('/', checkAuthenticated, (req, res) => {
-	res.render('index.ejs', { name: req.user.name })
+	res.render('index.js', { name: req.user.name })
 })
 
-app.get('/login', checkNotAuthenticated, (req, res) => {
-	res.render('login.ejs')
+app.get('/Login', checkNotAuthenticated, (req, res) => {
+	res.render('Login.js')
 })
 
-app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
+app.post('/Login', checkNotAuthenticated, passport.authenticate('local', {
 	successRedirect: '/',
-	failureRedirect: '/login',
+	failureRedirect: '/Login',
 	failureFlash: true
 }))
 
-app.get('/register', checkNotAuthenticated, (req, res) => {
-	res.render('register.ejs')
+app.get('/Register', checkNotAuthenticated, (req, res) => {
+	res.render('Register.js')
 })
 
-app.post('/register', checkNotAuthenticated, async (req, res) => {
+app.post('/Register', checkNotAuthenticated, async (req, res) => {
 	try {
 		const hashedPassword = await bcrypt.hash(req.body.password, 10)
 		users.push({
@@ -85,18 +85,18 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
 			email: req.body.email,
 			password: hashedPassword
 		})
-		res.redirect('/login')
+		res.redirect('/Login')
 	} catch {
-		res.redirect('/register')
+		res.redirect('/Register')
 	}
 	console.log(users)
 })
 // end routes
 
 // logs user out
-app.delete('/logout', (req, res) => {
+app.delete('/Logout', (req, res) => {
 	req.logOut()
-	res.redirect('/login')
+	res.redirect('/Login')
 })
 
 // Authenticated Middleware: Redirects users who are not logged in to the Login Page
@@ -104,7 +104,7 @@ function checkAuthenticated(req, res, next) {
 	if (req.isAuthenticated()) {
 		return next()
 	}
-	res.redirect('/login')
+	res.redirect('/Login')
 }
 
 // if user is logged in this redirects them the the home page
