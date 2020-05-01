@@ -8,7 +8,7 @@ function Jumbotron() {
 			Neighbor 2 Neighbor
 		  </p>
 		  <p className="subtitle">
-			Become a <strong>Donor</strong> or <strong>Donee</strong>
+			<strong>Donate</strong> or <strong>Find a Meal</strong>
 		  </p>
 		</div>
 	  </section>

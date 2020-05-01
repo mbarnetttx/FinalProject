@@ -2,10 +2,22 @@ import React, {Component} from "react";
 import '../App.css';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import API from '../utils/api';
 
 class EventCalendar extends Component {
+    state = {
+        donations: []  
+    }
+
+    componentDidMount() {
+        var _donations = API.getDonations();
+        this.setState({
+            donations: _donations
+        });
+    }
 
     render() {
+
         return (
            <FullCalendar 
            defaultView="dayGridMonth" 
