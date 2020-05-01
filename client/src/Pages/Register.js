@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 
 function Register() {
     return (
-        <form action="/register" method="POST">
+        <form action="/Register" method="POST">
             <h1 className="title">Register</h1>
                 <div>
                     <label className="name">Name</label>
@@ -34,7 +34,7 @@ function Register() {
 
                 <div>
                     <button className="button is-success">Register</button>
-                        <a href="/login">Login</a>
+                        <a href="/Login">Login</a>
                 </div>
             </form>
     )
