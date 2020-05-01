@@ -1,7 +1,7 @@
 import React from 'react';
 import Jumbotron from '../components/Jumbotron';
 
-function login() {
+function Login() {
     return (
         <div>
             <Jumbotron />
@@ -40,4 +40,4 @@ function login() {
     )
 }
 
-export default login
+export default Login;

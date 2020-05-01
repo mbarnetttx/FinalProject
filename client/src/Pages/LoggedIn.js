@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-import UserEvents from "../components/userEvents";
-import UserInfo from '../components/userInfo';
-import Jumbo from '../components/loggedInImage';
-import Form from '../components/Form';
+
+import UserEvents from "../componenets/userEvents";
+import UserInfo from '../componenets/userInfo';
+import Jumbo from '../componenets/loggedInImage';
+import Form2 from '../componenets/form2';
+
+
+
 
 class LoggedIn extends Component {
     render() {
@@ -11,7 +15,7 @@ class LoggedIn extends Component {
                <Jumbo />
             <div className="columns">
                 <div className="column">
-                    <Form />
+                    <Form2 />
                 </div>
                 <div className="column is-one-quarter">
                     <article className="message is-success">
