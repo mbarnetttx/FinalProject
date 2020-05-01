@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Jumbotron from '../componenets/Jumbotron';
+import Jumbotron from '../components/Jumbotron';
 
 class LoggedIn extends Component {
     render() {

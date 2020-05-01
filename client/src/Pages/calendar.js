@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Jumbotron from '../componenets/Jumbotron';
-import EventCalendar from "../componenets/EventCalendar";
+import Jumbotron from '../components/Jumbotron';
+import EventCalendar from "../components/EventCalendar";
 
 class Calendar extends Component {
     render() {
@@ -18,5 +18,4 @@ class Calendar extends Component {
         )
     }
 }
-
 export default Calendar;

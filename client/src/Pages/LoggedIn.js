@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+
 import UserEvents from "../componenets/userEvents";
 import UserInfo from '../componenets/userInfo';
 import Jumbo from '../componenets/loggedInImage';
 import Form2 from '../componenets/form2';
+
+
+
 
 class LoggedIn extends Component {
     render() {
