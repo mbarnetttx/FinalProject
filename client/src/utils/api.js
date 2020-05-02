@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
 	// Gets all items
-	getDonations: function () {
+	allDonations: function () {
 		return axios.get("/index");
 	},
 	// Gets the item with the given id
@@ -20,3 +20,5 @@ export default {
 	saveDonations: function (donations) {
 		return axios.post("/index", donations);
 	}
+
+}

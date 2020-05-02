@@ -1,7 +1,7 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import API from '../utils/api'
+import API from '../Utils/api'
 
 class Form2 extends React.Component {
     constructor(props) {
@@ -53,38 +53,39 @@ class Form2 extends React.Component {
 
     }
 
-    +
+    // +
 
 
     render() {
         return (
-            <Form>
+            <div className="box">  
+            <Form className="formLogin">
                 <Form.Group controlId="eventName">
                     <Form.Label>Event Name</Form.Label>
-                    <Form.Control type="name" placeholder="e.g Sack Lunches" />
+                    <Form.Control className="input" type="name" placeholder="e.g Sack Lunches" />
                 </Form.Group>
 
                 <Form.Group controlId="eventDescription">
                     <Form.Label>Event Description</Form.Label>
-                    <Form.Control type="description" placeholder="Write as much information about your donation as possible" />
+                    <Form.Control className="input" type="description" placeholder="Write as much information about your donation as possible" />
                 </Form.Group>
 
                 <Form.Group controlId="eventDate">
                     <Form.Label>Event Date</Form.Label>
-                    <Form.Control type="date" placeholder="MM/DD/YYYY" />
+                    <Form.Control className="input" type="date" placeholder="MM/DD/YYYY" />
                 </Form.Group>
 
                 <Form.Group controlId="lunchNumber">
                     <Form.Label># of Lunches Available</Form.Label>
-                    <Form.Control type="number" placeholder="Amount of items (e.g 15)" />
+                    <Form.Control className="input" type="number" placeholder="Amount of items (e.g 15)" />
                 </Form.Group>
 
 
-                <Button variant="primary" type="submit">
-                    Submit
-            </Button>
+                <Button className="button is-success" variant="primary" type="submit">
+                    Add Event
+                </Button>
             </Form>
-
+            </div>
         );
     };
 }

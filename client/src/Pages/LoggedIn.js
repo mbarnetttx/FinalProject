@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import UserEvents from "../componenets/userEvents";
-import UserInfo from '../componenets/userInfo';
-import Jumbo from '../componenets/loggedInImage';
-import Form2 from '../componenets/form2';
+import UserEvents from "../components/userEvents";
+import UserInfo from '../components/userInfo';
+import Jumbo from '../components/loggedInImage';
+import Form2 from '../components/form2';
 
 
 
