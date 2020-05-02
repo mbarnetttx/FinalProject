@@ -137,7 +137,6 @@ button{
  padding: 20px
 }
 
-
 .loginForm2{
   margin-left:150px;
   margin-right:150px;
@@ -148,4 +147,12 @@ button{
 .field{
   margin-right: 30px;
   margin-left: 30px;
+}
+
+.formLogin{
+  margin: 30px
+}
+
+.formGroup{
+  margin: 30px
 }

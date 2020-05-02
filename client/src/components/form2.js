@@ -60,22 +60,22 @@ class Form2 extends React.Component {
         return (
             <div className="box">  
             <Form className="formLogin">
-                <Form.Group controlId="eventName">
+                <Form.Group controlId="eventName" className="formGroup">
                     <Form.Label>Event Name</Form.Label>
                     <Form.Control className="input" type="name" placeholder="e.g Sack Lunches" />
                 </Form.Group>
 
-                <Form.Group controlId="eventDescription">
+                <Form.Group controlId="eventDescription" className="formGroup">
                     <Form.Label>Event Description</Form.Label>
                     <Form.Control className="input" type="description" placeholder="Write as much information about your donation as possible" />
                 </Form.Group>
 
-                <Form.Group controlId="eventDate">
+                <Form.Group controlId="eventDate" className="formGroup">
                     <Form.Label>Event Date</Form.Label>
                     <Form.Control className="input" type="date" placeholder="MM/DD/YYYY" />
                 </Form.Group>
 
-                <Form.Group controlId="lunchNumber">
+                <Form.Group controlId="lunchNumber" className="formGroup">
                     <Form.Label># of Lunches Available</Form.Label>
                     <Form.Control className="input" type="number" placeholder="Amount of items (e.g 15)" />
                 </Form.Group>
