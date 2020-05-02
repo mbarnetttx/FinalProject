@@ -31,7 +31,7 @@ function Nav() {
 						<div className="navbar-end">
 							<div className="navbar-item">
 								<div className="buttons">
-									<div className="button is-success">
+									<div className="button is-light">
 									<Link to="/donor" className={window.location.pathname === "/donor" ? "nav-link active" : "nav-link"}
 									>Donate </Link>
          							</div>
