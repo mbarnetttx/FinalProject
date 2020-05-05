@@ -1,4 +1,4 @@
-const donations = require("./donationsRouter");
+const donations = require("./donationsController");
 
 module.exports = {
 	donations,
