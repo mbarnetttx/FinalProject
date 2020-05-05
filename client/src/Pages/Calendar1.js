@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from '../components/Jumbotron';
 import EventCalendar from "../components/EventCalendar";
 
+
 class Calendar extends Component {
     render() {
         return (

@@ -42,7 +42,7 @@ class Form2 extends React.Component {
             eventDescription: eventDescription,
             lunchNumber: lunchNumber
         }];
-
+            console.log(saveObject);
         API.saveDonations(saveObject)
         .then(function(responseFromBackend) {
             console.log(responseFromBackend);
@@ -53,31 +53,45 @@ class Form2 extends React.Component {
 
     }
 
-    // +
+    onChangeName = (event) => {
+        this.setState({eventName:event.target.value})
+    }
+
+    onChangeDescription = (event) => {
+        this.setState({eventDescription:event.target.value})
+    }
+
+    onChangeDate = (event) => {
+        this.setState({eventDate:event.target.value})
+    }
+
+    onChangeNumber = (event) => {
+        this.setState({lunchNumber:event.target.value})
+    }
 
 
     render() {
         return (
             <div className="box">  
-            <Form className="formLogin">
-                <Form.Group controlId="eventName" className="formGroup">
+            <Form className="formLogin" onSubmit={this.mySubmitHandler}>
+                <Form.Group controlId="eventName"  className="formGroup">
                     <Form.Label>Event Name</Form.Label>
-                    <Form.Control className="input" type="name" placeholder="e.g Sack Lunches" />
+                    <Form.Control className="input" value={this.state.eventName} onChange = {this.onChangeName} type="name" placeholder="e.g Sack Lunches" />
                 </Form.Group>
 
                 <Form.Group controlId="eventDescription" className="formGroup">
                     <Form.Label>Event Description</Form.Label>
-                    <Form.Control className="input" type="description" placeholder="Write as much information about your donation as possible" />
+                    <Form.Control className="input" value={this.state.eventDescription} onChange = {this.onChangeDescription} type="description" placeholder="Write as much information about your donation as possible" />
                 </Form.Group>
 
                 <Form.Group controlId="eventDate" className="formGroup">
                     <Form.Label>Event Date</Form.Label>
-                    <Form.Control className="input" type="date" placeholder="MM/DD/YYYY" />
+                    <Form.Control className="input" value={this.state.eventDate} onChange = {this.onChangeDate} type="date" placeholder="MM/DD/YYYY" />
                 </Form.Group>
 
                 <Form.Group controlId="lunchNumber" className="formGroup">
                     <Form.Label># of Lunches Available</Form.Label>
-                    <Form.Control className="input" type="number" placeholder="Amount of items (e.g 15)" />
+                    <Form.Control className="input" value={this.state.lunchNumber} onChange = {this.onChangeNumber} type="number" placeholder="Amount of items (e.g 15)" />
                 </Form.Group>
 
 

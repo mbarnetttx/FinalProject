@@ -8,9 +8,9 @@ mongoose.connect(
 );
 const donations = [
 	{
-		userName: "MongoMaster",
-		date: new Date(Date.now()),
-        lunchNumb: 200,
+		eventName: "MongoMaster",
+		eventDate: new Date(Date.now()),
+        lunchNumber: 200,
         donationData: "These lunches will be available from 11am-2pm, Address Here"
     
 	},
