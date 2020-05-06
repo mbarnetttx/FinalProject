@@ -7,7 +7,7 @@ function Nav() {
 		<nav className="navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
 				<Link className="navbar-item" to="/home">
-					<img src="#" width="112" height="28" alt="N2NLogo"/>
+					<img src="https://files.slack.com/files-pri/TQ9GDKFS8-F013U02QNLQ/neighborlogosmall.png" width="20" height="30" alt="N2NLogo"/>
    				</Link>
 					<div role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 						<span aria-hidden="true"></span>

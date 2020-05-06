@@ -2,14 +2,9 @@ import React from "react";
 
 function Jumbotron() {
     return (
-		<section className="hero">
+		<section className="hero heroLogo">
 		<div className="hero-body">
-		  <p className="title">
-			Neighbor 2 Neighbor
-		  </p>
-		  <p className="subtitle">
-			<strong>Donate</strong> or <strong>Find a Meal</strong>
-		  </p>
+			<img src="https://files.slack.com/files-pri/TQ9GDKFS8-F0134AU34GK/neighborlogo.png"  className="mainLogo"/>
 		</div>
 	  </section>
     );

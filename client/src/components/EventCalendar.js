@@ -3,9 +3,11 @@ import '../App.css';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import API from '../Utils/api';
+// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 class EventCalendar extends Component {
     state = {
+        
         donations: [],
         eventData: [],
         
@@ -40,15 +42,16 @@ class EventCalendar extends Component {
 
 
 
-
     render() {
 
         return (
+          
             <FullCalendar
                 defaultView="dayGridMonth"
                 plugins={[dayGridPlugin]}
                 events={this.state.eventData}
-                eventClick={this.handleDateClick} />
+                eventClick={this.handleDateClick}  
+             />
         )
     }
 

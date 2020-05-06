@@ -10,6 +10,7 @@ import Login from './Pages/Login';
 import Logout from './Pages/Logout';
 import Register from './Pages/Register';
 import Wrapper from './components/Wrapper';
+import Details from './Pages/Details';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
              <Route exact path="/Login" component={Login} />
              <Route exact path="/Logout" component={Logout} />
              <Route exact path="/Register" component={Register} />
+             <Route exact path="/donations/" component={Details} />
              
        </Wrapper>
      </div>

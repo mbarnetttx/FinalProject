@@ -156,3 +156,15 @@ button{
 .formGroup{
   margin: 30px
 }
+
+.heroDetails{
+  font-size: 100px;
+}
+
+.mainLogo{
+  margin:0px
+}
+
+.heroLogo{
+  background-image: url("https://images.unsplash.com/photo-1523034602162-2311a7bcf07b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+}
