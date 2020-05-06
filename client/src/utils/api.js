@@ -7,7 +7,7 @@ export default {
 	},
 	// Gets the item with the given id
 	getDonations: function (id) {
-		return axios.get("/api/donations" + id);
+		return axios.get("/api/donations/" + id);
 	},
 	updateDonations: function (id, donations) {
 		return axios.put("/api/donations" + id, donations);
