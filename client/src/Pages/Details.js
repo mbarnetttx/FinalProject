@@ -1,8 +1,10 @@
 import React from "react";
-
+import Jumbotron from '../components/Jumbotron';
 
 function userEvents() {
     return (
+    <div> 
+        <Jumbotron />
     <div className="container">
      <section className="hero heroDetails">
           <h1> Event Details</h1>
@@ -12,7 +14,6 @@ function userEvents() {
             <article class="message is-dark">
                 <div class="message-header">
                     <p>Dark</p>
-                    <button class="delete" aria-label="delete"></button>
                 </div>
                 <div class="message-body">
                 </div>
@@ -21,7 +22,7 @@ function userEvents() {
       </nav>
       
     </div>
-
+    </div>   
     );
 }
 

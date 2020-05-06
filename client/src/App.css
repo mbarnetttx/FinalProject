@@ -56,7 +56,7 @@ margin-top: 20px;
 .heroImg{
  height: 500px;
  padding: 50px;
- background-image: url("https://images.unsplash.com/photo-1586323880397-58f0d4764df0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+ background-image: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1950&q=80");
  margin-left:40px;
  margin-right:40px;
  margin-bottom: 20px;
@@ -159,12 +159,20 @@ button{
 
 .heroDetails{
   font-size: 100px;
-}
-
-.mainLogo{
-  margin:0px
+  color: white;
+  text-shadow: 3px 2px rgb(80, 3, 27);
+  background-image: url("https://images.unsplash.com/photo-1487376480913-24046456a727?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
 }
 
 .heroLogo{
-  background-image: url("https://images.unsplash.com/photo-1523034602162-2311a7bcf07b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  height:400px;
+  background-image: url("https://images.unsplash.com/photo-1497005367839-6e852de72767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
+ 
+}
+
+.mainLogo{
+  width: 50%;
+  height: 500px;
+  margin-left: 25%;
+  padding-top:0
 }

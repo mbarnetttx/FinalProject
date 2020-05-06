@@ -27,7 +27,7 @@ function App() {
              <Route exact path="/Login" component={Login} />
              <Route exact path="/Logout" component={Logout} />
              <Route exact path="/Register" component={Register} />
-             <Route exact path="/donations/" component={Details} />
+             <Route exact path="/donations/5eb1fb7d304060370614e7a0" component={Details} />
              
        </Wrapper>
      </div>
