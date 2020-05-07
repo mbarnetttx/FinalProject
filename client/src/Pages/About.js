@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import Jumbotron from '../components/Jumbotron';
 
 
 class LoggedIn extends Component {
     render() {
         return (
         <div>
-            <Jumbotron />
             <br></br><br></br>
             
             <div className="container">

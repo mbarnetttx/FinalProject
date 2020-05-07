@@ -1,11 +1,9 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import Jumbotron from '../components/Jumbotron';
 
 function Register() {
     return (
         <div>
-        <Jumbotron/>
         <br/>
         <div className="container">
         <article className="message is-large is-light loginForm2">
