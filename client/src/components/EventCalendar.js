@@ -3,32 +3,43 @@ import '../App.css';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import API from '../Utils/api';
-// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import {Modal, ModalHeader, ModalBody} from "reactstrap";
 
 class EventCalendar extends Component {
-    state = {
-        
-        donations: [],
-        eventData: [],
-        
-    }
 
-    cleanData = (data) => {
+    state = {
+            modal: false,
+            donations: [],
+            eventData: [],
+            event: {
+                title: "",
+                date: "",
+                amount: "",
+                info: ""
+            }
+        };
+    toggle = () => {
+        this.setState({ modal: !this.state.modal });
+      };
+      handleEventClick = ({ event, el }) => {
+        this.toggle();
+        this.setState({ event });
+      };
+
+      cleanData = (data) => {
 
         let tempObject = {};
         let tempArray = [];
 
         data.forEach(event => {
-            tempObject = { title: event.eventName, date: event.eventDate, url: "/donations/" + event._id }
+            tempObject = { title: event.eventName, date: event.eventDate, amount: event.lunchNumber, info: event.donationData}
             tempArray.push(tempObject);
 
         })
 
         this.setState({ eventData: tempArray })
     }
-
     componentDidMount() {
-        console.log(window.location.pathname)
         API.allDonations()
             .then(res =>
                 this.setState({ donations: res.data }, () => {
@@ -39,25 +50,39 @@ class EventCalendar extends Component {
             .catch(err => console.log(err))
     }
 
-
-
-
     render() {
 
         return (
-          
+          <div>
             <FullCalendar
                 defaultView="dayGridMonth"
                 plugins={[dayGridPlugin]}
                 events={this.state.eventData}
-                eventClick={this.handleDateClick}  
+                // eventClick={this.handleDateClick} 
+                eventClick={this.handleEventClick}
              />
+             <Modal
+                isOpen={this.state.modal}
+                toggle={this.toggle}
+                >
+                <ModalHeader 
+                    className="message-header"
+                    toggle={this.toggle}>
+                   {this.state.event.title}
+                </ModalHeader>
+                <ModalBody
+                className="message-body box modalBod"
+                >
+                 <p>{this.state.event.amount}</p>
+                </ModalBody>
+            </Modal>
+        </div>
         )
     }
 
-    handleDateClick = (arg) => { // bind with an arrow function
-        alert(arg.target.url)
-    }
+    // handleDateClick = (arg) => { // bind with an arrow function
+    //     alert(arg.target.url)
+    // }
 
 
 

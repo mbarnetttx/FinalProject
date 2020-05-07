@@ -10,7 +10,6 @@ import Login from './Pages/Login';
 import Logout from './Pages/Logout';
 import Register from './Pages/Register';
 import Wrapper from './components/Wrapper';
-import Details from './Pages/Details';
 
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
              <Route exact path="/Login" component={Login} />
              <Route exact path="/Logout" component={Logout} />
              <Route exact path="/Register" component={Register} />
-             <Route exact path="/donations/5eb1fb7d304060370614e7a0" component={Details} />
              
        </Wrapper>
      </div>

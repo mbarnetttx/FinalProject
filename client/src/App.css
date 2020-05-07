@@ -176,3 +176,11 @@ button{
   margin-left: 25%;
   padding-top:0
 }
+
+.modalBox{
+  background-color: none;
+}
+
+.modalBod{
+  color: black;
+}
