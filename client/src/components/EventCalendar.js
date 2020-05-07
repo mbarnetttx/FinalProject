@@ -12,13 +12,15 @@ class EventCalendar extends Component {
             donations: [],
             eventData: [],
             event: {
-                title: "",
-                date: "",
-                amount: "",
-                info: ""
+                title: ""
+            },
+            info:{
+                amount: "testAmount",
+                description: "test Description is gluten free. pickup avaiable."
             }
         };
-    toggle = () => {
+
+      toggle = () => {
         this.setState({ modal: !this.state.modal });
       };
       handleEventClick = ({ event, el }) => {
@@ -32,7 +34,7 @@ class EventCalendar extends Component {
         let tempArray = [];
 
         data.forEach(event => {
-            tempObject = { title: event.eventName, date: event.eventDate, amount: event.lunchNumber, info: event.donationData}
+            tempObject = { title: event.eventName, date: event.eventDate}
             tempArray.push(tempObject);
 
         })
@@ -60,6 +62,7 @@ class EventCalendar extends Component {
                 events={this.state.eventData}
                 // eventClick={this.handleDateClick} 
                 eventClick={this.handleEventClick}
+                displayEventTime={false}
              />
              <Modal
                 isOpen={this.state.modal}
@@ -71,9 +74,10 @@ class EventCalendar extends Component {
                    {this.state.event.title}
                 </ModalHeader>
                 <ModalBody
-                className="message-body box modalBod"
+                    className="message-body box"
                 >
-                 <p>{this.state.event.amount}</p>
+                 <h2>{this.state.info.description}</h2>
+                 <h2>{this.state.info.amount}</h2>
                 </ModalBody>
             </Modal>
         </div>
