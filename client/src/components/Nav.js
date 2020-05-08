@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Nav() {
+	const [isActive, setisActive] = React.useState(false);
 	return (
 
 		<nav className="navbar" role="navigation" aria-label="main navigation">
@@ -9,14 +10,15 @@ function Nav() {
 				<Link className="navbar-item" to="/home">
 					<img src="https://files.slack.com/files-pri/TQ9GDKFS8-F013U02QNLQ/neighborlogosmall.png" width="20" height="30" alt="N2NLogo"/>
    				</Link>
-					<div role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<div onClick={() => {setisActive(!isActive);}}
+					 role="button" className={`navbar-burger burger ${isActive ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
 					</div>
  			 </div>
 
-				<div id="navbarBasicExample" className="navbar-menu">
+				<div id="navbarBasicExample" className={`navbar-menu ${isActive ? "is-active" : ""}`}>
 					<div className="navbar-start">
 						<div className="navbar-item">
 							<Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
@@ -28,7 +30,7 @@ function Nav() {
     					</div>
 					</div>
 
-						<div className="navbar-end">
+						<div className="navbar-end ">
 							<div className="navbar-item">
 								<div className="buttons">
 									<div className="button is-light">
@@ -53,6 +55,7 @@ function Nav() {
 					</div>
 		</nav>
 
+		
 	);
 }
 
