@@ -3,7 +3,7 @@ import '../App.css';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 
-import API from '../utils/api';
+import API from '../Utils/api';
 
 
 import {Modal, ModalHeader, ModalBody} from "reactstrap";
