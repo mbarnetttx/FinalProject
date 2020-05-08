@@ -180,3 +180,8 @@ button{
 .modalBox{
   background-color: none;
 }
+
+.modalHeader{
+  background-color: rgb(106, 172, 45);
+  font-size: 30px;
+}
