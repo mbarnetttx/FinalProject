@@ -7,7 +7,7 @@ function Nav() {
 
 		<nav className="navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
-				<Link className="navbar-item" to="/home">
+				<Link className="navbar-item" to="/">
 					<img src="https://files.slack.com/files-pri/TQ9GDKFS8-F013U02QNLQ/neighborlogosmall.png" width="20" height="30" alt="N2NLogo"/>
    				</Link>
 					<div onClick={() => {setisActive(!isActive);}}
@@ -32,21 +32,17 @@ function Nav() {
 
 						<div className="navbar-end ">
 							<div className="navbar-item">
-								<div className="buttons">
 									<div className="button is-light">
 									<Link to="/donor" className={window.location.pathname === "/donor" ? "nav-link active" : "nav-link"}
 									>Donate </Link>
-         							</div>
 								</div>
 							</div>
 				
 							<div className="navbar-item">
-								<div className="buttons">
 									<div className="button is-success">
 									<Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
 									>Log-In </Link>
          							</div>
-								</div>
 							</div>
 					
 						</div>
