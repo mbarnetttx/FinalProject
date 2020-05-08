@@ -41,7 +41,8 @@ class Form2 extends React.Component {
             alert("You must enter a username!")
         }
 
-       
+        alert("Your event has been successfully added!")
+        
         event.preventDefault();
         this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName: ''}) // <= here
         
