@@ -29,7 +29,7 @@ class Form2 extends React.Component {
 
         let eventDate = this.state.eventDate;
         if (!eventDate) {
-            alert("You must enter an eventName!")
+            alert("You must enter an event date!")
         }
 
         let lunchNumber = this.state.lunchNumber;
@@ -38,12 +38,14 @@ class Form2 extends React.Component {
         }
         let userName = this.state.userName;
         if (!userName) {
-            alert("You must enter how many items you will have available!")
+            alert("You must enter a username!")
         }
 
        
-          
-    
+        event.preventDefault();
+        this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName: ''}) // <= here
+        
+        
         var saveObject = [{
             eventName: eventName,
             eventDate: eventDate,
