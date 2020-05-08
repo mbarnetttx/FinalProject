@@ -8,7 +8,6 @@ body{
   font-size: 20px;
 }
 
-
 .App {
   text-align: center;
 }
@@ -172,8 +171,6 @@ button{
 
 .mainLogo{
   width: 50%;
-  height: 500px;
-  margin-left: 25%;
   padding-top:0
 }
 
