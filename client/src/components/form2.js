@@ -1,7 +1,7 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import API from '../Utils/api'
+import API from '../utils/api'
 
 class Form2 extends React.Component {
     constructor(props) {
@@ -10,7 +10,8 @@ class Form2 extends React.Component {
             eventName: "",
             eventDescription: "",
             eventDate: "",
-            lunchNumber: ""
+            lunchNumber: "",
+            userName: ""
         };
     }
     mySubmitHandler = (event) => {
@@ -28,19 +29,30 @@ class Form2 extends React.Component {
 
         let eventDate = this.state.eventDate;
         if (!eventDate) {
-            alert("You must enter an eventName!")
+            alert("You must enter an event date!")
         }
 
         let lunchNumber = this.state.lunchNumber;
         if (!lunchNumber) {
             alert("You must enter how many items you will have available!")
         }
+        let userName = this.state.userName;
+        if (!userName) {
+            alert("You must enter a username!")
+        }
 
+        alert("Your event has been successfully added!")
+        
+        event.preventDefault();
+        this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName: ''}) // <= here
+        
+        
         var saveObject = [{
             eventName: eventName,
             eventDate: eventDate,
             eventDescription: eventDescription,
-            lunchNumber: lunchNumber
+            lunchNumber: lunchNumber,
+            userName: userName
         }];
             console.log(saveObject);
         API.saveDonations(saveObject)
@@ -69,6 +81,10 @@ class Form2 extends React.Component {
         this.setState({lunchNumber:event.target.value})
     }
 
+    onChangeUser = (event) => {
+        this.setState({userName:event.target.value})
+    }
+
 
     render() {
         return (
@@ -92,6 +108,11 @@ class Form2 extends React.Component {
                 <Form.Group controlId="lunchNumber" className="formGroup">
                     <Form.Label># of Lunches Available</Form.Label>
                     <Form.Control className="input" value={this.state.lunchNumber} onChange = {this.onChangeNumber} type="number" placeholder="Amount of items (e.g 15)" />
+                </Form.Group>
+
+                <Form.Group controlId="userName" className="formGroup">
+                    <Form.Label>User Name</Form.Label>
+                    <Form.Control className="input" value={this.state.userName} onChange = {this.onChangeUser} type="user" />
                 </Form.Group>
 
 

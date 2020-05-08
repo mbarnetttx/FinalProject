@@ -7,7 +7,8 @@ const donations = new Schema({
 	eventName: { type: String, required: true },
     eventDate: { type: Date, default: Date.now },
     lunchNumber: {type: Number, required: true},
-    eventDescription: {type: String, required: true}
+    eventDescription: {type: String, required: true}, 
+    userName: {type: String, required: true}
 });
 
 //Setting schema to variable
