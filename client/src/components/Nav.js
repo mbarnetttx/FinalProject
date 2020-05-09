@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import miniLogo from './neighborlogosmall.png';
 
 function Nav() {
 	const [isActive, setisActive] = React.useState(false);
@@ -8,7 +9,7 @@ function Nav() {
 		<nav className="navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
 				<Link className="navbar-item" to="/">
-					<img src="https://files.slack.com/files-pri/TQ9GDKFS8-F013U02QNLQ/neighborlogosmall.png" width="20" height="30" alt="N2NLogo"/>
+					<img src={miniLogo} width="20" height="30" alt="N2NLogo"/>
    				</Link>
 					<div onClick={() => {setisActive(!isActive);}}
 					 role="button" className={`navbar-burger burger ${isActive ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

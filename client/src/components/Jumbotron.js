@@ -1,8 +1,9 @@
 import React from "react";
+import Logo from './neighborlogo.png';
 
 function Jumbotron() {
     return (
-			<img src="https://files.slack.com/files-pri/TQ9GDKFS8-F0134AU34GK/neighborlogo.png"  className="mainLogo" alt="logo"/>
+			<img src={Logo} className="mainLogo" alt="logo"/>
 	  
     );
 }

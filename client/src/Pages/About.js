@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Avatar from '../components/meredith.png';
 
 class LoggedIn extends Component {
     render() {
@@ -46,7 +46,7 @@ class LoggedIn extends Component {
                     <div className="card">{/*Meredith*/}
                         <div className="card-image">
                             <figure>
-                            <img className="teamAvatar" src="https://files.slack.com/files-pri/TQ9GDKFS8-F0132M994P8/20626692_10156254175555021_1198585073724106721_o__2_.jpg" alt="Placeholderimage"/>
+                            <img className="teamAvatar" src={Avatar} alt="Placeholderimage"/>
                             </figure>
                         </div>
                         <div className="card-content">
