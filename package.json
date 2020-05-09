@@ -16,15 +16,14 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "react-bootstrap": "^1.0.1"
-    
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.3"
   },
-  "engines":{
+  "engines": {
     "node": "^12.14.1",
-    "npm":  "^6.13.4"
+    "npm": "^6.13.4"
   },
   "scripts": {
     "devStart": "nodemon server.js",
