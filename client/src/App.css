@@ -1,0 +1,184 @@
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+
+body{
+  background-image: url("https://images.unsplash.com/photo-1548685913-fe6678babe8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1923&q=80");
+  font-family: 'Nixie One', cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer{
+padding:20px;
+}
+
+.footerLinks{
+  margin-left: 100px;
+}
+
+.content, .media-content{
+  text-align: center;
+}
+
+figure{
+ margin-right: 0;
+}
+
+.title2{
+font-size: 100px;
+text-shadow: 5px 5px rgb(230, 226, 216);
+}
+.hero{
+ background-color: rgb(177, 235, 122);
+}
+
+.hero2{
+  background-image: url("https://images.unsplash.com/photo-1570078420152-d016091ec97a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
+
+.heroLogged{
+background-image: url("https://images.unsplash.com/photo-1533499513792-8c4483a36c9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80");
+height: 200px;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.heroImg{
+ height: 500px;
+ padding: 50px;
+ background-image: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1950&q=80");
+ margin-left:40px;
+ margin-right:40px;
+ margin-bottom: 20px;
+}
+
+.heroImg2{
+  height: 500px;
+  padding: 50px;
+  background-image: url("https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom: 20px;
+ }
+
+.header{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.card{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.box{
+  margin-bottom: 10px;
+}
+
+.is-rounded{
+  padding:10px;
+}
+
+span{
+  text-align: center;
+}
+
+.avatar{
+  border-radius: 200px;
+  height: 210px;
+  width: 210px
+}
+
+.teamAvatar{
+  border-radius: 200px;
+  height: 150px;
+  width: 150px;
+  margin-top: 20px
+}
+
+.userName{
+  text-align: center;
+}
+
+.welcome{
+  font-size: 300%;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 2px rgb(8, 41, 1);
+}
+
+button{
+  margin-right: 10px;
+}
+
+.loginForm{
+  height: 200px;
+}
+
+.formLog{
+  margin:10px
+}
+
+.loginForm{
+  margin-top: 30px;
+ margin-left:40px;
+ margin-right:40px;
+ height: 350px;
+ padding: 20px
+}
+
+.loginForm2{
+  margin-left:150px;
+  margin-right:150px;
+  height: 450px;
+  padding: 20px
+ }
+
+.field{
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.formLogin{
+  margin: 30px
+}
+
+.formGroup{
+  margin: 30px
+}
+
+.heroDetails{
+  font-size: 100px;
+  color: white;
+  text-shadow: 3px 2px rgb(80, 3, 27);
+  background-image: url("https://images.unsplash.com/photo-1487376480913-24046456a727?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+}
+
+.heroLogo{
+  height:400px;
+  background-image: url("https://images.unsplash.com/photo-1497005367839-6e852de72767?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
+ 
+}
+
+.mainLogo{
+  width: 50%;
+  padding-top:0
+}
+
+.modalBox{
+  background-color: none;
+}
+
+.modalHeader{
+  background-color: rgb(106, 172, 45);
+  font-size: 30px;
+}

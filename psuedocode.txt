@@ -17,6 +17,8 @@ what kind of foods can be contributed? think of foods that can spoil
 
 CRUD 
 
+
+
 GET webpage data to display
 
 POST allows users to input what meals they can contribute to what day
@@ -48,3 +50,13 @@ NEED
 -secured API use
 
 
+Meredith   Get, Post 
+
+Yensey   File structure and functionality
+
+Tanisha   Put, Edit, Delete
+
+
+-email reminders
+-authentication
+-heroku deployment
