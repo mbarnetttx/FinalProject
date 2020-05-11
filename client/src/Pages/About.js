@@ -66,14 +66,14 @@ class LoggedIn extends Component {
                 <div className="card">{/*Tanisha*/}
                         <div className="card-image">
                             <figure>
-                            <img className="teamAvatar" src="https://avatars1.githubusercontent.com/u/57296464?s=400&u=0ed00ef4ccc0685cc36411eef2d2aeb298da07c9&v=4" alt="Placeholderimage"/>
+                            <img className="teamAvatar" src="https://avatars0.githubusercontent.com/u/57296464?s=400&u=dc454e5d5d5be89cece11b5c84c605533988802c&v=4" alt="Placeholderimage"/>
                             </figure>
                         </div>
                         <div className="card-content">
                             <div className="media">
                             <div className="media-content">
                             <p className="title is-4">Tanisha Howell</p>
-                            <p className="subtitle is-6">@johnsmith</p>
+                            <p className="subtitle is-6">@tanishaH</p>
                             </div>
                         </div>
                             <div className="content">

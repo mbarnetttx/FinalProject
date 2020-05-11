@@ -17,7 +17,6 @@ function userInfo() {
             <div className="card-content">
                 <div className="content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                
                 <br/>
                 </div>
             </div>
@@ -28,10 +27,10 @@ function userInfo() {
             <div className="navbar-item">
 				<div className="buttons">
 					<div className="button is-success">
-					<Link to="/logout" className={window.location.pathname === "/logout" ? "nav-link active" : "nav-link"}
+					<Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
 					>Logout </Link>
          			</div>
-					</div>
+				</div>
 			</div>
             
         </div>
