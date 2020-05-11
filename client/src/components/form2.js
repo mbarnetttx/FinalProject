@@ -2,7 +2,7 @@ import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import API from '../utils/api'
-import { useHistory } from 'react-router-dom'
+
 
 
 class Form2 extends React.Component {
@@ -129,7 +129,6 @@ class Form2 extends React.Component {
                             <Form.Control className="input" value={this.state.userName} onChange={this.onChangeUser} type="user" />
                         </Form.Group>
 
-<<<<<<< HEAD
 
                         <Button className="button is-success" variant="primary" type="submit">
                             Add Event
@@ -139,18 +138,6 @@ class Form2 extends React.Component {
             );
         };
     }
-=======
-                
-                <Button className="button is-success" variant="primary" type="submit">
-                    Add Event
-                </Button>
-                
-            </Form>
-            </div>
-        );
-    };
-}
->>>>>>> 7e8340b3e2b2552f0ade2aed95e454fc2741f15c
 
 
 
