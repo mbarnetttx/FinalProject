@@ -49,11 +49,11 @@ class Form2 extends React.Component {
 
 
         event.preventDefault();
-        this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName: ''}) // <= here
+        this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName:'' }) // <= here
         
         alert("Your event has been successfully added!")
 
-        window.open("https://neighbor-2-neighbor.herokuapp.com/")
+        // window.open("https://neighbor-2-neighbor.herokuapp.com/")
         
         
 
@@ -126,7 +126,7 @@ class Form2 extends React.Component {
 
                         <Form.Group controlId="userName" className="formGroup">
                             <Form.Label>User Name</Form.Label>
-                            <Form.Control className="input" value={this.state.userName} onChange={this.onChangeUser} type="user" />
+                            <Form.Control className="input" value={this.state.userName} onChange = {this.onChangeUser} type="user" />
                         </Form.Group>
 
 
