@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import API from '../utils/api'
 import { useHistory } from 'react-router-dom'
 
+
 class Form2 extends React.Component {
     constructor(props) {
         super(props);
@@ -15,6 +16,10 @@ class Form2 extends React.Component {
             userName: ""
         };
     }
+
+     // Click Event.
+   
+
     mySubmitHandler = (event) => {
         event.preventDefault();
 
@@ -43,22 +48,22 @@ class Form2 extends React.Component {
         }
 
 
+        event.preventDefault();
+        this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName: ''}) // <= here
+        
+        alert("Your event has been successfully added!")
+
+        window.open("https://neighbor-2-neighbor.herokuapp.com/")
+        
         
 
-            event.preventDefault();
-            this.setState({ eventName: '', eventDate: '', eventDescription: '', lunchNumber: '', userName: '' }) // <= here
-
-            alert("Your event has been successfully added!")
-
-
-
-            var saveObject = [{
-                eventName: eventName,
-                eventDate: eventDate,
-                eventDescription: eventDescription,
-                lunchNumber: lunchNumber,
-                userName: userName
-            }];
+        var saveObject = [{
+            eventName: eventName,
+            eventDate: eventDate,
+            eventDescription: eventDescription,
+            lunchNumber: lunchNumber,
+            userName: userName
+        }];
             console.log(saveObject);
             API.saveDonations(saveObject)
                 .then(function (responseFromBackend) {
@@ -90,6 +95,10 @@ class Form2 extends React.Component {
             this.setState({ userName: event.target.value })
         }
 
+    handleClick = () => {
+        this.props.history("/");
+    }
+
 
         render() {
             return (
@@ -120,6 +129,7 @@ class Form2 extends React.Component {
                             <Form.Control className="input" value={this.state.userName} onChange={this.onChangeUser} type="user" />
                         </Form.Group>
 
+<<<<<<< HEAD
 
                         <Button className="button is-success" variant="primary" type="submit">
                             Add Event
@@ -129,6 +139,18 @@ class Form2 extends React.Component {
             );
         };
     }
+=======
+                
+                <Button className="button is-success" variant="primary" type="submit">
+                    Add Event
+                </Button>
+                
+            </Form>
+            </div>
+        );
+    };
+}
+>>>>>>> 7e8340b3e2b2552f0ade2aed95e454fc2741f15c
 
 
 
