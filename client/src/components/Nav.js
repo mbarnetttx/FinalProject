@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import miniLogo from './neighborlogosmall.png';
 
+
 function Nav() {
 	const [isActive, setisActive] = React.useState(false);
 	return (
-
 		<nav className="navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
+
 				<Link className="navbar-item" to="/">
 					<img src={miniLogo} width="20" height="30" alt="N2NLogo"/>
    				</Link>
@@ -44,13 +45,23 @@ function Nav() {
 									<Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
 									>Log-In </Link>
          							</div>
+
 							</div>
-					
 						</div>
-
-
 					</div>
+
+					<div className="navbar-item">
+						<div className="buttons">
+							<div className="button is-success">
+								<Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
+								>Log-In </Link>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
 		</nav>
+
 
 		
 	);
