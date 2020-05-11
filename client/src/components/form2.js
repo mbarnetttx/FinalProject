@@ -11,7 +11,7 @@ class Form2 extends React.Component {
             eventDescription: "",
             eventDate: "",
             lunchNumber: "",
-            userName: ""
+            // userName: ""
         };
     }
     mySubmitHandler = (event) => {
@@ -36,15 +36,15 @@ class Form2 extends React.Component {
         if (!lunchNumber) {
             alert("You must enter how many items you will have available!")
         }
-        let userName = this.state.userName;
-        if (!userName) {
-            alert("You must enter a username!")
-        }
+        // let userName = this.state.userName;
+        // if (!userName) {
+        //     alert("You must enter a username!")
+        // }
 
         
 
         event.preventDefault();
-        this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName: ''}) // <= here
+        this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', }) // <= here
         
         alert("Your event has been successfully added!")
         
@@ -55,7 +55,7 @@ class Form2 extends React.Component {
             eventDate: eventDate,
             eventDescription: eventDescription,
             lunchNumber: lunchNumber,
-            userName: userName
+            // userName: userName
         }];
             console.log(saveObject);
         API.saveDonations(saveObject)
@@ -84,9 +84,9 @@ class Form2 extends React.Component {
         this.setState({lunchNumber:event.target.value})
     }
 
-    onChangeUser = (event) => {
-        this.setState({userName:event.target.value})
-    }
+    // onChangeUser = (event) => {
+    //     this.setState({userName:event.target.value})
+    // }
 
 
     render() {
@@ -113,10 +113,10 @@ class Form2 extends React.Component {
                     <Form.Control className="input" value={this.state.lunchNumber} onChange = {this.onChangeNumber} type="number" placeholder="Amount of items (e.g 15)" />
                 </Form.Group>
 
-                <Form.Group controlId="userName" className="formGroup">
+                {/* <Form.Group controlId="userName" className="formGroup">
                     <Form.Label>User Name</Form.Label>
                     <Form.Control className="input" value={this.state.userName} onChange = {this.onChangeUser} type="user" />
-                </Form.Group>
+                </Form.Group> */}
 
 
                 <Button className="button is-success" variant="primary" type="submit">

@@ -95,7 +95,6 @@ class EventCalendar extends Component {
                 defaultView="dayGridMonth"
                 plugins={[dayGridPlugin]}
                 events={this.state.eventData}
-                // eventClick={this.handleDateClick} 
                 eventClick={this.handleEventClick}
                 displayEventTime={false}
              />
