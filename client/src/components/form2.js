@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import API from '../utils/api'
 
+
 class Form2 extends React.Component {
     constructor(props) {
         super(props);
@@ -14,6 +15,10 @@ class Form2 extends React.Component {
             userName: ""
         };
     }
+
+     // Click Event.
+   
+
     mySubmitHandler = (event) => {
         event.preventDefault();
 
@@ -47,8 +52,10 @@ class Form2 extends React.Component {
         this.setState({eventName: '', eventDate: '', eventDescription: '', lunchNumber:'', userName: ''}) // <= here
         
         alert("Your event has been successfully added!")
+
+        window.open("https://neighbor-2-neighbor.herokuapp.com/")
         
-      
+        
 
         var saveObject = [{
             eventName: eventName,
@@ -88,6 +95,10 @@ class Form2 extends React.Component {
         this.setState({userName:event.target.value})
     }
 
+    handleClick = () => {
+        this.props.history("/");
+    }
+
 
     render() {
         return (
@@ -118,10 +129,11 @@ class Form2 extends React.Component {
                     <Form.Control className="input" value={this.state.userName} onChange = {this.onChangeUser} type="user" />
                 </Form.Group>
 
-
+                
                 <Button className="button is-success" variant="primary" type="submit">
                     Add Event
                 </Button>
+                
             </Form>
             </div>
         );
