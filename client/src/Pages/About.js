@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Avatar from '../components/meredith.png';
 
 class LoggedIn extends Component {
     render() {
@@ -25,7 +25,7 @@ class LoggedIn extends Component {
             <article className="box">{/*About Us Box*/}
                     <p className="header">About Neighbor 2 Neighbor</p>
                         <div className="message-body">
-                        Neighbor 2 Neighbor: A web application that allows users to upload events if they have goods to donate to their community such as food, medical supplies, pet supplies etc. 
+                        Neighbor 2 Neighbor: A web application that allows users to upload events if they have goods to donate to their community such as snacks, prepared meals, canned goods etc. 
                         The user is also allowed to post when they will be available and other users to post if they will be going or not.
                         </div>
             </article>
@@ -33,8 +33,9 @@ class LoggedIn extends Component {
             <article className="box">{/*About Us Box*/}
                     <p className="header">Benefits</p>
                         <div className="message-body">
-                        Neighbor 2 Neighbor: A web application that allows users to upload events if they have goods to donate to their community such as food, medical supplies, pet supplies etc. 
-                        The user is also allowed to post when they will be available and other users to post if they will be going or not.
+                            This web application is beneficial to those in need, allowing them to have easier access to those who are willing to donate.
+                            It is also beneficial to the donor as they are allowed an easier way to display their donation event. It is simple to use whether it's 
+                            on a desktop or mobil phone. Our communty will become closer together.
                         </div>
             </article>
 
@@ -45,7 +46,7 @@ class LoggedIn extends Component {
                     <div className="card">{/*Meredith*/}
                         <div className="card-image">
                             <figure>
-                            <img className="teamAvatar" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholderimage"/>
+                            <img className="teamAvatar" src={Avatar} alt="Placeholderimage"/>
                             </figure>
                         </div>
                         <div className="card-content">

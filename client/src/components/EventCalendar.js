@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import '../App.css';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
-
-import API from '../utils/api';
+import API from '../Utils/api';
 
 
 import {Modal, ModalHeader, ModalBody} from "reactstrap";
@@ -15,33 +14,65 @@ class EventCalendar extends Component {
             modal: false,
             donations: [],
             eventData: [],
-            event: {
-                title: ""
+            modalInfo: {
+                title: "",
+                amount: "",
+                description: "",
             },
-            info:{
-                amount: "testAmount",
-                description: "test Description is gluten free. pickup avaiable."
-            }
         };
 
       toggle = () => {
         this.setState({ modal: !this.state.modal });
       };
       handleEventClick = ({ event, el }) => {
+   
+          
+          var _amount = null;
+          var _description = null;
+          var _date = null;
+
+          for(var i = 0; i < this.state.eventData.length; i++) {
+
+              if(parseInt(this.state.eventData[i].id) === parseInt(event.id)) {
+           
+                  _amount = this.state.eventData[i].amount;
+                  _date = this.state.eventData[i].date;
+                  _description = this.state.eventData[i].description;
+              }
+          }
+          console.log("Event ID: " + event.id);
+
+          this.setState({
+            modalInfo: {
+                title: event.title,
+                date: _date,
+                amount: _amount,
+                description: _description, 
+                id: event.id
+            }
+          })
         this.toggle();
-        this.setState({ event });
       };
 
       cleanData = (data) => {
-
+        console.log(data);
         let tempObject = {};
         let tempArray = [];
 
+        var _id = 0;
         data.forEach(event => {
-            tempObject = { title: event.eventName, date: event.eventDate}
+            tempObject = { 
+                title: event.eventName, 
+                date: event.eventDate, 
+                amount: event.lunchNumber,
+                description: event.eventDescription,
+                id: _id
+            };
+            _id++;
             tempArray.push(tempObject);
 
         })
+        console.log(tempArray);
 
         this.setState({ eventData: tempArray })
     }
@@ -64,7 +95,6 @@ class EventCalendar extends Component {
                 defaultView="dayGridMonth"
                 plugins={[dayGridPlugin]}
                 events={this.state.eventData}
-                // eventClick={this.handleDateClick} 
                 eventClick={this.handleEventClick}
                 displayEventTime={false}
              />
@@ -73,25 +103,22 @@ class EventCalendar extends Component {
                 toggle={this.toggle}
                 >
                 <ModalHeader 
-                    className="message-header"
+                    className="message-header modalHeader"
                     toggle={this.toggle}>
-                   {this.state.event.title}
+                   {this.state.modalInfo.title}
                 </ModalHeader>
                 <ModalBody
                     className="message-body box"
                 >
-                 <h2>{this.state.info.description}</h2>
-                 <h2>{this.state.info.amount}</h2>
+                 <h2>Event Info: {this.state.modalInfo.description}</h2>
+                 <br/>
+                 <h2># Available: {this.state.modalInfo.amount}</h2>
+                 <h2>{this.state.modalInfo.date}</h2>
                 </ModalBody>
             </Modal>
         </div>
         )
     }
-
-    // handleDateClick = (arg) => { // bind with an arrow function
-    //     alert(arg.target.url)
-    // }
-
 
 
 }
