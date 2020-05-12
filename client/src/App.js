@@ -7,7 +7,6 @@ import Calendar from './Pages/Calendar1';
 import LoggedIn from './Pages/LoggedIn';
 import About from './Pages/About';
 import Login from './auth/Login';
-import Profile from './auth/Profile';
 import Register from './auth/Register';
 import Wrapper from './components/Wrapper';
 
@@ -25,7 +24,6 @@ function App() {
              <Route exact path="/donor" component={LoggedIn} />
              <Route exact path="/Register" component={Register} />
              <Route exact path="/Login" component={Login} />
-             <Route exact path="/profile" component={Profile} />
        </Wrapper>
      </div>
  

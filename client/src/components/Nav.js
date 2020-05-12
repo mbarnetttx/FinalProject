@@ -49,17 +49,6 @@ function Nav() {
 							</div>
 						</div>
 					</div>
-
-					<div className="navbar-item">
-						<div className="buttons">
-							<div className="button is-success">
-								<Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
-								>Log-In </Link>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>	
 		</nav>
 
 
