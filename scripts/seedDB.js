@@ -4,15 +4,15 @@ const db = require("../models");
 //This file empties the Items & Users collections and inserts the items & users below
 mongoose.connect(
 	process.env.MONGODB_URI || "mongodb://localhost:27017/donations",
-	{ useNewUrlParser: true }
+	{ useUnifiedTopology: true, useNewUrlParser: true }
 );
 const donations = [
 	{
-		eventName: "MongoMaster",
+		eventName: "Name of Event",
 		eventDate: new Date(Date.now()),
         lunchNumber: 200,
-        donationData: "These lunches will be available from 11am-2pm, Address Here"
-    
+		eventDescription: "These lunches will be available from 11am-2pm, Address Here/Phonenumber",
+		userName: "sampleUsername1"
 	},
 
 ];

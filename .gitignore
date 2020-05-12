@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-=======
+queries.md
+.env
+psuedocode.txt
 
->>>>>>> 7e8340b3e2b2552f0ade2aed95e454fc2741f15c
 # Logs
 logs
 *.log
@@ -77,8 +77,4 @@ dist
 # DynamoDB Local files
 .dynamodb/
 # TernJS port file
-<<<<<<< HEAD
 .tern-port
-=======
-.tern-port
->>>>>>> 7e8340b3e2b2552f0ade2aed95e454fc2741f15c
