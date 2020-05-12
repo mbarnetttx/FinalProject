@@ -66,8 +66,8 @@ class Login extends Component {
               <button
                 type="submit"
                 className="btn btn-lg btn-primary btn-block"
-              >
-                Sign in
+               ><a href="/donor">
+                Sign in</a>
               </button>
               <button 
                 type="submit" 
