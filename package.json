@@ -1,51 +1,52 @@
 {
-	"name": "finalproject",
-	"version": "1.0.0",
-	"description": "Community Meal Support App",
-	"main": "server.js",
-	"dependencies": {
-		"bcrypt": "^4.0.1",
-		"bulma-carousel": "^4.0.4",
-		"concurrently": "^5.1.0",
-		"cors": "^2.8.5",
-		"ejs": "^3.1.2",
-		"express": "^4.17.1",
-		"express-flash": "0.0.2",
-		"express-session": "^1.17.1",
-		"jsonwebtoken": "^8.5.1",
-		"method-override": "^3.0.0",
-		"mongoose": "^5.9.13",
-		"passport": "^0.4.1",
-		"passport-local": "^1.0.0",
-		"react-bootstrap": "^1.0.1"
-	},
-	"devDependencies": {
-		"dotenv": "^8.2.0",
-		"nodemon": "^2.0.3"
-	},
-	"engines": {
-		"node": "^12.14.1",
-		"npm": "^6.13.4"
-	},
-	"scripts": {
-		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-		"start:prod": "node server.js",
-		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-		"client": "cd client && npm run start",
-		"seed": "node scripts/seedDB.js",
-		"install": "cd client && npm install",
-		"build": "cd client && npm run build",
-		"heroku-postbuild": "npm run build"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/mbarnetttx/FinalProject.git"
-	},
-	"author": "Meredith Barnett, Tanisha Howell, Yensey Murillo",
-	"license": "UNLICENSED",
-	"bugs": {
-		"url": "https://github.com/mbarnetttx/FinalProject/issues"
-	},
-	"homepage": "https://github.com/mbarnetttx/FinalProject#readme",
-	"keywords": []
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "Community Meal Support App",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.13",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "react-bootstrap": "^1.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
+  },
+  "engines": {
+    "node": "^12.14.1",
+    "npm": "^6.13.4"
+  },
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbarnetttx/FinalProject.git"
+  },
+  "author": "Meredith Barnett, Tanisha Howell, Yensey Murillo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mbarnetttx/FinalProject/issues"
+  },
+  "homepage": "https://github.com/mbarnetttx/FinalProject#readme",
+  "keywords": []
+
 }

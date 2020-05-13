@@ -27,7 +27,7 @@ class Login extends Component {
 
     login(user).then(res => {
       if (res) {
-        this.props.history.push(`/Donor`)
+        this.props.history.push(`/donor`)
       }
     })
   }
@@ -40,12 +40,13 @@ class Login extends Component {
         <div className="row">
           <div className="col-md-6 mt-5 mx-auto">
             <form noValidate onSubmit={this.onSubmit}>
-              <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+              <h1 className="h3 mb-3 font-weight-normal signIn">Please sign in</h1>
+              <br/>
               <div className="form-group">
                 <label htmlFor="email">Email address</label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control input"
                   name="email"
                   placeholder="Enter email"
                   value={this.state.email}
@@ -56,16 +57,17 @@ class Login extends Component {
                 <label htmlFor="password">Password</label>
                 <input
                   type="password"
-                  className="form-control"
+                  className="form-control input"
                   name="password"
                   placeholder="Password"
                   value={this.state.password}
                   onChange={this.onChange}
                 />
               </div>
+              <br/>
               <button
                 type="submit"
-                className="btn btn-lg btn-primary btn-block"
+                className="btn btn-lg btn-primary btn-block button is-success"
                ><a href="/donor">
                 Sign in</a>
               </button>
