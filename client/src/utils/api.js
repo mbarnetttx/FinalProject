@@ -18,7 +18,7 @@ export default {
 	},
 	// Saves an item to the database
 	saveDonations: function (donations) {
-		return axios.post("/api/donations", donations);
+		return axios.post("https://neighbor-2-neighbor.herokuapp.com/api/donations", donations);
 		
 	}
 
