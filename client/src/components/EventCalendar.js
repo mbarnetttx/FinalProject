@@ -55,7 +55,7 @@ class EventCalendar extends Component {
       };
 
     //   cleanData = (data) => {
-    //     console.log(data);
+    
     //     // let tempObject = {};
     //     // let tempArray = [];
 
