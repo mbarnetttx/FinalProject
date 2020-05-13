@@ -9,6 +9,7 @@ import Form2 from '../components/form2';
 
 
 class LoggedIn extends Component {
+
     render() {
         return (
         <div className="container">
