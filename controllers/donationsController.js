@@ -4,8 +4,8 @@ const db = require("../models");
 // Defining methods for the itemsController
 module.exports = {
 	findAll: function (req, res) {
-		console.log(req.body);
-		db.Item.find({})
+		console.log(req.query);
+		db.Item.find(req.query)
 			.sort({ date: -1 })
 			.then((dbModel) => res.json(dbModel))
 			.catch((err) => res.json(err));
