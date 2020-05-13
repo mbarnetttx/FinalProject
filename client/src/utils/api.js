@@ -3,6 +3,7 @@ import axios from "axios";
 export default {
 	// Gets all items
 	allDonations: function () {
+		console.log("All Donations HIT");
 		return axios.get("/api/donations/");
 	},
 	// Gets the item with the given id
@@ -18,8 +19,7 @@ export default {
 	},
 	// Saves an item to the database
 	saveDonations: function (donations) {
+		console.log("Post Donations HIT");
 		return axios.post("/api/donations/", donations);
-		
-	}
-
-}
+	},
+};

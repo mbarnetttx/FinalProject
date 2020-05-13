@@ -54,6 +54,7 @@ class EventCalendar extends Component {
         this.toggle();
       };
 
+
       cleanData = (data) => {
         console.log(data);
         let tempObject = {};
@@ -76,6 +77,7 @@ class EventCalendar extends Component {
 
         this.setState({ eventData: tempArray })
     }
+
     componentDidMount() {
         API.allDonations()
             .then(res =>
