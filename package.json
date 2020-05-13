@@ -5,7 +5,6 @@
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^4.0.1",
-    "bulma-carousel": "^4.0.4",
     "concurrently": "^5.1.0",
     "cors": "^2.8.5",
     "ejs": "^3.1.2",

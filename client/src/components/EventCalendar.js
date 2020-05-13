@@ -59,16 +59,16 @@ class EventCalendar extends Component {
         let tempObject = {};
         let tempArray = [];
 
-        var _id = 0;
+        // var _id = 0;
         data.forEach(event => {
             tempObject = { 
                 title: event.eventName, 
                 date: event.eventDate, 
                 amount: event.lunchNumber,
                 description: event.eventDescription,
-                id: _id
+                // id: _id
             };
-            _id++;
+            // _id++;
             tempArray.push(tempObject);
 
         })
