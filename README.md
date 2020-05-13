@@ -10,7 +10,7 @@ Neighbor 2 Neighbor: A web application that allows users to upload events if the
 
 Depolyed using Heroku.
 
-* [Click here to view demo](https://neighbor-2-neighbor.herokuapp.com/about)
+* [Click here to view demo](https://neighbor-2-neighbor.herokuapp.com)
 
 
 ## Built With
