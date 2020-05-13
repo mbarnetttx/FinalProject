@@ -54,34 +54,35 @@ class EventCalendar extends Component {
         this.toggle();
       };
 
-      cleanData = (data) => {
-        console.log(data);
-        let tempObject = {};
-        let tempArray = [];
+    //   cleanData = (data) => {
+    //     console.log(data);
+    //     // let tempObject = {};
+    //     // let tempArray = [];
 
-        var _id = 0;
-        data.forEach(event => {
-            tempObject = { 
-                title: event.eventName, 
-                date: event.eventDate, 
-                amount: event.lunchNumber,
-                description: event.eventDescription,
-                id: _id
-            };
-            _id++;
-            tempArray.push(tempObject);
+    //     // var _id = 0;
+    //     // data.forEach(event => {
+    //     //     tempObject = { 
+    //     //         title: event.eventName, 
+    //     //         date: event.eventDate, 
+    //     //         amount: event.lunchNumber,
+    //     //         description: event.eventDescription,
+    //     //         id: _id
+    //     //     };
+    //     //     _id++;
+    //     //     tempArray.push(tempObject);
 
-        })
-        console.log(tempArray);
+    //     // })
+    //     // console.log(tempArray);
 
-        this.setState({ eventData: tempArray })
-    }
+    //     // this.setState({ eventData: tempArray })
+    // }
     componentDidMount() {
         API.allDonations()
             .then(res =>
-                this.setState({ donations: res.data }, () => {
-                    this.cleanData(this.state.donations)
-                }),
+                console.log(res.data)
+                // this.setState({ donations: res.data }, () => {
+                //     this.cleanData(this.state.donations)
+                // }),
             )
 
             .catch(err => console.log(err))
