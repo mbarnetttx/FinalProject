@@ -1,14 +1,12 @@
 //  Dependencies
 // const router = require("express").Router();
-const express = require("express");
-const router = express.Router();
-const donationsController = require("../../controllers/donationsController")
+const router = require("express").Router();
+const donationsController = require("../../controllers/donationsController");
 
-
-
-
-router.route("/").get(donationsController.findAll).post(donationsController.create);
-
+router
+	.route("/")
+	.get(donationsController.findAll)
+	.post(donationsController.create);
 
 router
 	.route("/:id")
