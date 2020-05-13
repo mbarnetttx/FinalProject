@@ -27,8 +27,9 @@ app.use(
 // const donationsRouter = ("./controllers/donationsController")
 // app.use(donationsRouter);
 
-app.use(routes);
 app.use('/users', Users)
+app.use(routes);
+
 
 // Connect to the Mongo DB
 mongoose.connect(
