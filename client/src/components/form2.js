@@ -48,7 +48,7 @@ class Form2 extends React.Component {
         }
 
 
-        event.preventDefault();
+     
         this.setState({ eventName: '', eventDate: '', eventDescription: '', lunchNumber: '', userName: '' }) // <= here
 
         alert("Your event has been successfully added!")
@@ -122,10 +122,12 @@ class Form2 extends React.Component {
                         <Form.Control className="input" value={this.state.lunchNumber} onChange={this.onChangeNumber} type="number" placeholder="Amount of items (e.g 15)" />
                     </Form.Group>
 
-                    <Form.Group controlId="userName" className="formGroup">
-                        <Form.Label>User Name</Form.Label>
-                        <Form.Control className="input" value={this.state.userName} onChange={this.onChangeUser} type="user" />
-                    </Form.Group>
+
+                        <Form.Group controlId="userName" className="formGroup">
+                            <Form.Label>User Name</Form.Label>
+                            <Form.Control className="input" value={this.state.userName} onChange = {this.onChangeUser} type="user" />
+                        </Form.Group>
+
 
 
                     <Button className="button is-success" variant="primary" type="submit">
