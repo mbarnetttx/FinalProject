@@ -74,7 +74,7 @@ users.post('/login', (req, res) => {
     })
 })
 
-users.get('/Donor', (req, res) => {
+users.get('/donor', (req, res) => {
   var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
 
   User.findOne({
