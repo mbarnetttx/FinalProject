@@ -2,6 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import API from "../utils/api";
+import {withRouter} from 'react-router-dom';
 
 class Form2 extends React.Component {
 	constructor(props) {
@@ -54,7 +55,7 @@ class Form2 extends React.Component {
 
 		alert("Your event has been successfully added!");
 
-		// window.open("https://neighbor-2-neighbor.herokuapp.com/")
+		
 
 		var saveObject = [
 			{
@@ -94,6 +95,11 @@ class Form2 extends React.Component {
 	onChangeUser = (event) => {
 		this.setState({ userName: event.target.value });
 	};
+
+	submitForm (e) {
+		e.preventDefault()
+		this.props.history.push('/'); // <--- The page you want to redirect your user to.
+	  }
 
 	render() {
 		return (
@@ -155,16 +161,19 @@ class Form2 extends React.Component {
 						/>
 					</Form.Group>
 
-					<Button
+					<form onSubmit={this.submitForm.bind(this)}>
+					<Button 
+						
 						className="button is-success"
 						variant="primary"
 						type="submit">
 						Add Event
 					</Button>
+					</form>
 				</Form>
 			</div>
 		);
 	}
 }
 
-export default Form2;
+export default withRouter(Form2);
