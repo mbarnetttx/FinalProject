@@ -22,7 +22,7 @@ Depolyed using Heroku.
 
 * [FullCalendar](https://fullcalendar.io) - The javaScript Calendar we used.
 * [Bulma.io](https://maven.apache.org/) - Css Framework.
-* [Passport](http://www.passportjs.org/docs/authenticate/) - User Authentication.
+* [JSON Webtoken (jwt)](https://jwt.io/introduction/) - User Authentication.
 * [Whimsical](https://whimsical.com) - Used to build our web deisgn.
 
 
